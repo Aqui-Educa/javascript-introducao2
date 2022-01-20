@@ -1,22 +1,50 @@
 <html>
 <body>
 
-
 <input type="text" id="campo">
-
 <br><br>
-
 <button onclick="abrirMensagens()">
     Exibir mensagem
 </button>
 
+<br>
+<hr>
+<br>
+
+<div id="texto">
+    Dan Lustosa
+</div>
+
+<div>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="verde()">Verde</button>
+    <button onclick="azul()">Azul</button>
+    <button onclick="rosa()">Rosa</button>
+</div>
+
+<br>
+<hr>
+<br>
 
 <script language="javascript">
-    document.getElementById("campo").value = "Dan Lustosa"
-
     function abrirMensagens() {
-        alert('Aqui eu coloco a minha mensagem')
-        alert("Oi, meu nome é Dan")
+        alert(document.getElementById("campo").value)
+    }
+
+    function vermelho() {
+        document.getElementById("texto").style.color = "red"
+    }
+
+    function verde() {
+        document.getElementById("texto").style.color = "green"
+    }
+
+    function azul() {
+        document.getElementById("texto").style.color = "blue"
+    }
+
+    function rosa() {
+        document.getElementById("texto").style.color = "pink"
     }
 </script>
 
