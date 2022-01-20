@@ -26,6 +26,12 @@
 <hr>
 <br>
 
+<input type="text" id="numero">
+<br>
+<button onclick="exponencial()">Calcular</button>
+
+
+
 <script language="javascript">
     function abrirMensagens() {
         alert(document.getElementById("campo").value)
@@ -45,6 +51,15 @@
 
     function rosa() {
         document.getElementById("texto").style.color = "pink"
+    }
+
+    function exponencial() {
+        var numero = document.getElementById("numero").value
+
+        for (let index = 0; index < 10; index++) {
+            numero = numero * 2            
+            console.log(numero)
+        }
     }
 </script>
 
