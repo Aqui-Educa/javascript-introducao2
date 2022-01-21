@@ -1,6 +1,24 @@
 <html>
 <body>
 
+
+<select id="time">
+    <option value="">Selecione o seu time</option>
+    <option value="1">Bahia</option>
+    <option value="2">São Paulo</option>
+    <option value="3">Grêmio</option>
+    <option value="4">Flamengo</option>
+</select>
+<br>
+<button onclick="exibirTime()">Exibir time</button>
+
+
+<br>
+<hr>
+<br>
+    
+
+
 <input type="text" id="campo">
 <br><br>
 <button onclick="abrirMensagens()">
@@ -33,6 +51,32 @@
 
 
 <script language="javascript">
+    function exibirTime(){
+        
+        var select = document.getElementById("time").value
+
+        switch (select) {
+            case "1":
+                alert("BBMP")                
+                break;        
+            case "2":
+                alert("Time de São Paulo")
+                break;        
+            case "3":
+                alert("Bah! Tchê!")
+                break;        
+            case "4":
+                alert("Já é!")
+                break;        
+            default:
+                alert("Não tem time")
+                break;
+        }
+
+    }
+
+
+
     function abrirMensagens() {
         alert(document.getElementById("campo").value)
     }
